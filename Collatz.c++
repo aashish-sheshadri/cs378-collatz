@@ -33,8 +33,23 @@ bool collatz_read (std::istream& r, int& i, int& j) {
 int collatz_eval (int i, int j) {
     assert(i > 0);
     assert(j > 0);
-    // <your code>
     int v = 1;
+    while(i<=j) {
+        int tempVal = i;
+        int tempLength = 1;
+        while(tempVal!=1){
+            if(tempVal % 2 == 0){
+                tempVal >>= 1;
+            } else {
+                tempVal = (tempVal << 1) + tempVal + 1;
+            }
+            tempLength++;
+        }
+        if(v < tempLength){
+            v = tempLength;
+        }
+        i++;
+    }
     assert(v > 0);
     return v;}
 

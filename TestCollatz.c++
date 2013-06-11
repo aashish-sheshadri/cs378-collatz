@@ -79,11 +79,11 @@ struct TestCollatz : CppUnit::TestFixture {
     
     void test_eval_5 () {
         const int v = collatz_eval(1,1);
-        CPPUNIT_ASSERT(v==0);}
+        CPPUNIT_ASSERT(v==1);}
 
     void test_eval_6 () {
         const int v = collatz_eval(2,2);
-        CPPUNIT_ASSERT(v==1);}
+        CPPUNIT_ASSERT(v==2);}
 
     // -----
     // print
@@ -107,7 +107,7 @@ struct TestCollatz : CppUnit::TestFixture {
         std::istringstream r("1 10\n100 200\n201 210\n900 1000\n2 2\n1 1\n");
         std::ostringstream w;
         collatz_solve(r, w);
-        CPPUNIT_ASSERT(w.str() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n2 2 1\n1 1 0");}
+        CPPUNIT_ASSERT(w.str() == "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n2 2 2\n1 1 1\n");}
 
     // -----
     // suite
