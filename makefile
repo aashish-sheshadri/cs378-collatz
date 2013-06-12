@@ -3,7 +3,7 @@ all:
 	make test
 
 diff: RunCollatz
-	RunCollatz < RunCollatz.in > RunCollatz.tmp
+	./RunCollatz < RunCollatz.in > RunCollatz.tmp
 	diff RunCollatz.out RunCollatz.tmp
 	rm RunCollatz.tmp
 
@@ -14,7 +14,7 @@ log:
 	git log > Collatz.log
 
 RunCollatz: Collatz.h Collatz.c++ RunCollatz.c++
-	g++ -pedantic -std=c++0x -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
+	g++ -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
 
 run: RunCollatz
 	RunCollatz < RunCollatz.in
