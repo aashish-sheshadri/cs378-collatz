@@ -35,14 +35,8 @@ int collatz_lazy_cache(unsigned int num){
     if(num > CACHE_SIZE)
         return collatz_compute(num);
     
-    static int lazyCache[CACHE_SIZE];
-    
-    static bool first = true;
-    if(first)
-        for(unsigned int i = 0; i<CACHE_SIZE; i++)
-            lazyCache[i] = 0;
-    first = false;
-
+    static int lazyCache[CACHE_SIZE] = {};  
+   
     if(lazyCache[num] == 0){
         lazyCache[num] = collatz_compute(num);
     }
