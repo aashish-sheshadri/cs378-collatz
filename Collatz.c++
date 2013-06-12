@@ -30,10 +30,42 @@ bool collatz_read (std::istream& r, int& i, int& j) {
 // collatz_lazy_cache
 // -----------
 
-int collatz_lazy_cache(unsigned int i){
-    assert(i > 0);
-    return -1;
+int collatz_lazy_cache(unsigned int num){
+    assert(num > 0);
+    if(num > CACHE_SIZE)
+        return collatz_compute(num);
+    
+    static int lazyCache[CACHE_SIZE];
+    
+    static bool first = true;
+    if(first)
+        for(unsigned int i = 0; i<CACHE_SIZE; i++)
+            lazyCache[i] = 0;
+    first = false;
+
+    if(lazyCache[num] == 0){
+        lazyCache[num] = collatz_compute(num);
+    }
+    return lazyCache[num];
 }
+
+// ------------
+// collatz_compute
+// ------------
+
+int collatz_compute (unsigned int num) {
+    int length = 1;
+    while(num!=1){
+        if(num % 2 == 0){
+            num >>= 1;
+        } else {
+            num = (num << 1) + num + 1;
+        }
+        length++;
+    }
+    return length;
+}
+
 // ------------
 // collatz_eval
 // ------------
@@ -50,16 +82,7 @@ int collatz_eval (int i, int j) {
 
     int v = 1;
     while(i<=j) {
-        int tempVal = i;
-        int tempLength = 1;
-        while(tempVal!=1){
-            if(tempVal % 2 == 0){
-                tempVal >>= 1;
-            } else {
-                tempVal = (tempVal << 1) + tempVal + 1;
-            }
-            tempLength++;
-        }
+        int tempLength = collatz_lazy_cache(i);
         if(v < tempLength){
             v = tempLength;
         }

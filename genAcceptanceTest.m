@@ -2,7 +2,7 @@ clear all;
 close all;
 
 load allData.mat;
-MaxSize = 1000000;
+MaxSize = 100000;
 reorderFir = randperm(MaxSize);
 reorderSec = randperm(MaxSize);
 
