@@ -58,6 +58,20 @@ struct TestCollatz : CppUnit::TestFixture {
         CPPUNIT_ASSERT(j == 1000000);}
 
     // ----
+    // lazy cache lookup
+    // ----
+    
+    void test_lazy_cache_1 () {
+        const int len = collatz_lazy_cache(999999);
+        CPPUNIT_ASSERT(len == 0);
+    }
+
+    void test_lazy_cache_2 () {
+        const int len = collatz_lazy_cache(4294967295);
+        CPPUNIT_ASSERT(len == 0);
+    }
+        
+    // ----
     // eval
     // ----
 
@@ -132,6 +146,8 @@ struct TestCollatz : CppUnit::TestFixture {
     CPPUNIT_TEST_SUITE(TestCollatz);
     CPPUNIT_TEST(test_read_1);
     CPPUNIT_TEST(test_read_2);
+    CPPUNIT_TEST(test_lazy_cache_1);
+    CPPUNIT_TEST(test_lazy_cache_2);
     CPPUNIT_TEST(test_eval_1);
     CPPUNIT_TEST(test_eval_2);
     CPPUNIT_TEST(test_eval_3);

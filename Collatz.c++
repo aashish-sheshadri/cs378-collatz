@@ -27,6 +27,14 @@ bool collatz_read (std::istream& r, int& i, int& j) {
     return true;}
 
 // ------------
+// collatz_lazy_cache
+// -----------
+
+int collatz_lazy_cache(unsigned int i){
+    assert(i > 0);
+    return -1;
+}
+// ------------
 // collatz_eval
 // ------------
 

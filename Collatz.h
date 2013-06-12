@@ -6,7 +6,8 @@
 
 #ifndef Collatz_h
 #define Collatz_h
-
+#define CACHE_SIZE 4294967295
+//#define CACHE_SIZE 56991483520 
 // --------
 // includes
 // --------
@@ -25,6 +26,18 @@
  * @return true if that succeeds, false otherwise
  */
 bool collatz_read (std::istream&, int&, int&);
+
+// ------------
+// collatz_lazy_cache
+// -----------
+
+/**
+ * stores lazy cache
+ * @param num for which collatz length is required 
+ * @return int also indicating availability
+ */
+int collatz_lazy_cache(unsigned int);
+ 
 
 // ------------
 // collatz_eval
