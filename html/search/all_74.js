@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['tempmax',['tempMax',['../gen_collatz_len_8m.html#a580903005345e01ba9aab545f792fb55',1,'genCollatzLen.m']]],
+  ['tempsave',['tempSave',['../gen_acceptance_test_8m.html#ae2091dff17202c5656c387f9e21614cb',1,'genAcceptanceTest.m']]],
+  ['test_5fcompute_5fcollatz_5f1',['test_compute_collatz_1',['../struct_test_collatz.html#a8dfc88a1171c8e4b7189a0e79d3e3420',1,'TestCollatz']]],
+  ['test_5fcompute_5fcollatz_5f2',['test_compute_collatz_2',['../struct_test_collatz.html#a331478dd120964bf267da610451fde26',1,'TestCollatz']]],
+  ['test_5fcompute_5fcollatz_5f3',['test_compute_collatz_3',['../struct_test_collatz.html#af8b39eec2f59eee2a234486ae5f1b9dc',1,'TestCollatz']]],
+  ['test_5fcompute_5fcollatz_5f4',['test_compute_collatz_4',['../struct_test_collatz.html#a05f93db2f9158211a7f739d047ad3fee',1,'TestCollatz']]],
+  ['test_5feval_5f1',['test_eval_1',['../struct_test_collatz.html#a6cbed0c21b9629f8d976aefd3227738b',1,'TestCollatz']]],
+  ['test_5feval_5f2',['test_eval_2',['../struct_test_collatz.html#af4a13ed69e43facf22351fbce1b2151d',1,'TestCollatz']]],
+  ['test_5feval_5f3',['test_eval_3',['../struct_test_collatz.html#a81bdbc92410e8a5ba713a5584983f5fe',1,'TestCollatz']]],
+  ['test_5feval_5f4',['test_eval_4',['../struct_test_collatz.html#adcaeeabf4b06da3ec214f982b5b79ba3',1,'TestCollatz']]],
+  ['test_5feval_5f5',['test_eval_5',['../struct_test_collatz.html#a0413b43c482db34f2b976a9627cf58d0',1,'TestCollatz']]],
+  ['test_5feval_5f6',['test_eval_6',['../struct_test_collatz.html#af1f812020118815b493299db212199e6',1,'TestCollatz']]],
+  ['test_5feval_5f7',['test_eval_7',['../struct_test_collatz.html#a2deed6a3f646c6925ed83e7f83c19d2d',1,'TestCollatz']]],
+  ['test_5flazy_5fcache_5f1',['test_lazy_cache_1',['../struct_test_collatz.html#a14d4f2231d6fa8ff7738de3591e8ab3e',1,'TestCollatz']]],
+  ['test_5flazy_5fcache_5f2',['test_lazy_cache_2',['../struct_test_collatz.html#aeb57bc5ebc55458e2caa1cd7e46a08de',1,'TestCollatz']]],
+  ['test_5fprint_5f1',['test_print_1',['../struct_test_collatz.html#abf743e6de146c33c151e60591cae967d',1,'TestCollatz']]],
+  ['test_5fprint_5f2',['test_print_2',['../struct_test_collatz.html#ac6483f48ce850595424fac4223ee3a6c',1,'TestCollatz']]],
+  ['test_5fread_5f1',['test_read_1',['../struct_test_collatz.html#afe1222c8bed51379439889b704907a95',1,'TestCollatz']]],
+  ['test_5fread_5f2',['test_read_2',['../struct_test_collatz.html#a4c916ffa98ec5666d2a546390d82688f',1,'TestCollatz']]],
+  ['test_5fsolve_5f1',['test_solve_1',['../struct_test_collatz.html#ac558693300d8e4f22a7ee1d2044d323d',1,'TestCollatz']]],
+  ['test_5fsolve_5f2',['test_solve_2',['../struct_test_collatz.html#a6e4a73401508783dd69dc33df2a832fc',1,'TestCollatz']]],
+  ['test_5fsolve_5f3',['test_solve_3',['../struct_test_collatz.html#a8d1be4ee9fb45796196a913f580946fd',1,'TestCollatz']]],
+  ['testcollatz',['TestCollatz',['../struct_test_collatz.html',1,'']]],
+  ['testcollatz_2ec_2b_2b',['TestCollatz.c++',['../_test_collatz_8c_09_09.html',1,'']]]
+];
