@@ -32,6 +32,8 @@ bool collatz_read (std::istream& r, int& i, int& j) {
 
 int collatz_lazy_cache(unsigned int num){
     assert(num > 0);
+    assert(CACHE_SIZE > 0);
+
     if(num > CACHE_SIZE)
         return collatz_compute(num);
     
@@ -48,6 +50,8 @@ int collatz_lazy_cache(unsigned int num){
 // ------------
 
 int collatz_compute (unsigned int num) {
+    assert(num > 0);
+
     int length = 1;
     while(num!=1){
         if(num % 2 == 0){
