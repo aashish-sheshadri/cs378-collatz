@@ -14,7 +14,7 @@ log:
 	git log > Collatz.log
 
 RunCollatz: Collatz.h Collatz.c++ RunCollatz.c++
-	g++ -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
+	g++ -pedantic -std=c++0x -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
 
 run: RunCollatz
 	RunCollatz < RunCollatz.in
@@ -32,13 +32,13 @@ testv: TestCollatz
 	valgrind TestCollatz
 
 turnin-list:
-	turnin --list reza cs371ppj1
+	turnin --list tmtorres cs378pj1
 
 turnin-submit:
-	turnin --submit reza cs371ppj1 Collatz.zip
+	turnin --submit tmtorres cs378pj1 Collatz.zip
 
 turnin-verify:
-	turnin --verify reza cs371ppj1
+	turnin --verify tmtorres cs378pj1
 
 zip:
 	zip -r Collatz.zip html/ makefile           \
